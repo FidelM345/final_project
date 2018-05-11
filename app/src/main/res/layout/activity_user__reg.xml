@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fidelmomolo.smartfirst.User_Reg">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/toolbar_revamp"
+            android:orientation="vertical" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="129dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder_3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="21dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userreg_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="First Name" />
+
+
+            <EditText
+                android:id="@+id/userreg_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Last Name" />
+
+            <Spinner
+                android:id="@+id/userreg_location"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="12dp"
+                android:entries="@array/spinnerItems"
+                android:prompt="@string/spin"
+                android:spinnerMode="dialog" />
+
+
+            <Button
+                android:id="@+id/userreg_ok_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/toolbar_revamp"
+                android:fontFamily="sans-serif"
+                android:text="OK"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            tools:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+
+
+</android.widget.ScrollView>
